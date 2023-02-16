@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanson Family Recipes Page</title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: rgb(252, 104, 104);">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mb-0 h1" href="#">Hanson Family Recipes</a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./HansonRecipesHome.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./Recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./PhotosAndStories.html">Photos and Stories</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    
+      <!--For the recipe list make something that is hoverable and will eventually house links to the different recipes.-->
+      <table class="table table-hover container">
+        <!--Want the header to be slightly different color. Had tried to work out something other than grey or black but it didn't work.-->
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Recipe Category</th>
+            <th scope="col">Recipe Name</th>
+            <th scope="col">Recipe Type</th>
+            <th scope="col">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+            <!--Want to add links within the table that will eventually lead to actual pages.-->
+          <tr>
+            <th scope="row">Entree</th>
+            <td>Pizza Tacos</td>
+            <td>Everyday</td>
+            <td><a href="#" class="btn btn-outline-info btn-sm">Link</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Side Dish</th>
+            <td>Funeral Potatoes</td>
+            <td>Holiday</td>
+            <td><a href="#" class="btn btn-outline-info btn-sm">Link</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Sweets</th>
+            <td>Chocolate Ritz</td>
+            <td>Holiday</td>
+            <td><a href="#" class="btn btn-outline-info btn-sm">Link</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    <script src="node_modules\jquery\dist\jquery.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+</body>
+</html>

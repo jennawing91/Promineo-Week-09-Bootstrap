@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes from Videos</title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+    <style>
+        div {
+            border-style: solid;
+            border-color: black;
+               }
+
+    </style>
+</head>
+<!-- To load bootstrap go to terminal
+        go to directory of project
+        npm init
+        enter through everything and enter yes
+        if package.json is there continue
+        npm i bootstrap@4.4.1   (can change the version number)
+        npm i jquery
+    
+      To test if bootstrap and jquery installed correctly
+        link to href="node_modules\bootstrap\dist\css\bootstrap.css"
+        add a div to test an alert
+        add script src="node_modules\jquery\dist\jquery.js" (can use jquery.min.js for actual implementation)
+        add script src="node_modules\bootstrap\dist\js\bootstrap.bundle.js"
+      If you can open the webpage and see a styled div appear then bootstrap has been installed correct-->
+
+<body>
+    <div class="container">
+        <div class="alert-primary" role="alert">  <!--This is the test <div> to ensure bootstrap is installed correct-->
+            It worked!
+        </div><br>
+
+        <div class="alert-secondary" role="alert">  
+            Secondary
+        </div><br>
+
+        <div class="alert-success" role="alert">  
+            Success
+        </div><br>
+
+        <div class="alert-danger" role="alert"> 
+        Danger
+        </div><br>
+
+        <div class="alert-warning" role="alert">  
+            Warning
+        </div><br>
+    </div>
+        <br><br>
+
+    <!--The following are the button codes for bootstrap. Each color represents a different button so to change the
+            button color you would change the it to "btn btn-(fill in the name to corresponding color)" for example
+            if you want a button to be blue even though it is a danger button it would be "btn btn-primary" instead
+            of "btn btn-danger" because this would produce a red button-->
+    
+    <div>
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-success">Success Button</button>
+        <button class="btn btn-danger">Danger Button</button>
+        <button class="btn btn-warning">Warning Button</button>
+        <button class="btn btn-ingo">Info Button</button>
+        <button class="btn btn-light">Light Button</button>
+        <button class="btn btn-dark">Dark Button</button>
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <br><br>
+
+    <!--Notifications and badges
+        -->
+
+        <button class="btn btn-info">
+            Notifications<span class="badge badge-secondary">5</span>
+        </button>
+    <br>
+        <h3>Invite Friends<span class="badge badge-primary">NEW</span></h3>
+    <br><br>
+
+    <table class="table table-success table-striped">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Declan</td>
+            <td>declan@gmail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Leah</td>
+            <td>leah@gmail.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ethan</td>
+            <td>ethan@gmail.com</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Maeve</td>
+            <td>maeve@gmail.com</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Hailey</td>
+            <td>hailey@gmail.com</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!--The following are tests for bootstrap grid
+        Grids allows us to put rows inside containers and rows inside of columns
+        Common use is to display content in 3 columns on laptop but on a phone or tablet these containers would
+        stack on top of each other
+    
+    2 types of containers:
+        Container class: content is centered and horizontally padded and does not take up the entire width of the screen
+        Container Fluid class: takes up 100% width on all container sizes
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                Content 1 
+            </div>
+            <div class="col-lg-6">
+                Content 2 
+            </div>
+            <div class="col-lg-3">
+                Content 3 
+            </div>
+        </div>      
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg">
+                Content 1a
+                <div class="row">
+                    <div class="col-sm-6">
+                        Here is my nested row 6
+                    </div>
+                    <div class="col-sm-3">
+                        Here is my nested row 3a
+                    </div>
+                    <div class="col-sm-3">
+                        Here is my nested row 3b
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                Content 2a
+            </div>
+            <div class="col-lg">
+                Content 3a
+            </div>
+        </div>
+    </div>
+
+    <!--Additional components available on https://getbootstrap.com/docs/5.3/getting-started/introduction/
+            Can explore all kinds of examples, components, source code, etc    -->
+    <!--Navigation Bar aka NavBar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!--Sets the brand up for the bar like a company name-->
+        <a class="navbar-brand" href="NotesFromVideos.html">Notes from Videos</a>  
+        <!--Creates a responsive toggle style menu that goes to a hamburger menu when the screen gets smaller-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="A">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="B">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="C">Request Info</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="D" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a href="dropdown-item">Item 1</a>
+                    <a href="dropdown-item">Item 2</a>
+                    <a href="dropdown-item">Item 3</a>
+                </div>
+            </li>
+        </ul>
+    </div> 
+    </nav>
+
+    <script src="node_modules\jquery\dist\jquery.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+</body>
+</html> 

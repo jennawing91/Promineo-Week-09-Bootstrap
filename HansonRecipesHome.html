@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanson Family Recipes Home Page</title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+</head>
+<body>
+  <!--Code sets the navigation bar up to have a title followed by links to additional pages. There is a search bar at the end that will
+      eventually be linked to searchable recipes and photos.-->
+    <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: rgb(252, 104, 104);">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mb-0 h1" href="#">Hanson Family Recipes</a>
+      <!--This sets up the clickable links to the other pages. These links will shrink down to a toggle style hamburger menu when the screen shrinks down.-->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./HansonRecipesHome.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./Recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./PhotosAndStories.html">Photos and Stories</a>
+              </li>
+          </ul>
+          <!--Next is the search bar. This will eventually link up to recipes and photos by name and category. I did change the color of the
+          search button to be info style rather than secondary just so it would stand out more on the page.-->
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <!--for the jumbotron message I really wanted to create an image with text over the image but could not get it to work without tiling.
+          This option of having the header over a photo seemed to be a more workable option. I did adjust the color of the text to blend into
+          the style better overall. I also made sure that the image was responsive so it could be scaled down as the screen scales down.-->
+     <section class="jumbotron text-center mt-3" style="background-color:rgb(250, 150, 150)">
+    <div class="container-fluid">
+      <div class="mask" style="background-color: rgb(250, 150, 150);">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="text-white">
+            <h1 class="mb-3">Sometimes a little comfort food can go a long way.</h1>
+            <h4 class="mb-3">A collection of recipes, photos and stories to comfort our family and share food traditions 
+              of our Hanson family.</h4>
+          </div>
+        </div>
+      </div>
+      
+      <img src="./img/Cookie cutout.jpg" class="img-fluid" alt="Photo of sugar cookie dough being cut into pumpkins.">
+         
+    
+    </div>
+  </section>
+
+  <!--For the card deck need to have an image at top with a short description and a linkable button. Will eventually link to pages
+      that are clickable and searchable. -->
+  <div class="card-deck">
+    <div class="card">
+      <img src="./img/Holiday Foods.jpg" class="card-img-top img-fluid" alt="Photo of Thanksgiving dinner.">
+      <div class="card-body">
+        <h5 class="card-title">Holiday Foods</h5>
+        <p class="card-text">Holiday and celebration foods. Includes birthdays, Easter, Thanksgiving and Christmas foods.</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/Everyday Foods.jpg" class="card-img-top img" alt="Photo of picnic food.">
+      <div class="card-body">
+        <h5 class="card-title">Everyday Foods</h5>
+        <p class="card-text">Everyday foods that we enjoy as a family.</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/Cookie image.jpg" class="card-img-top img-fluid" alt="Photo of table of Christmas baked goods.">
+      <div class="card-body">
+        <h5 class="card-title">Sweets and Treats</h5>
+        <p class="card-text">All the baked goods and treats. Includes everyday items and Christmas and birthday favorites.</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+    <script src="node_modules\jquery\dist\jquery.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+</body>
+</html> 
